@@ -1,13 +1,17 @@
+import ThemeRegistry from "@/components/ThemeRegistry";
+
 export const metadata = {
   title: "Vapes",
-  description: "Catalogo de vapes",
+  description: "Catalogode vapes",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <ThemeRegistry>
+          {children}
+        </ThemeRegistry>
       </body>
     </html>
   );

@@ -1,0 +1,16 @@
+#vape-flavour-text:hover {
+    animation: scrollText 10s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
