@@ -1,12 +1,24 @@
-'use client'
 import { Typography, Box, Button } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
 import Image from "next/image";
 
 import '@/static/globalAnimations.css';
 
-export default function ProductCard() {
+export default function ProductCard({ key, product }) {
+
+    const handleWaMe = (event) => {
+        event.preventDefault();
+
+        const message = 'Hola, me interesa el producto. ¿Podrías darme más información?';
+        const encodedMsg = encodeURIComponent(message);
+
+        window.open(`https://api.whatsapp.com/send?phone=5491130921112&text=${encodedMsg}`, '_blank');
+    }
+
+
     return (
+
         <Grid variant="productCard" size={{ xs: 12, md: 8, lg: 4 }} sx={{
             pb: 0,
             pt: 1,
@@ -30,7 +42,7 @@ export default function ProductCard() {
             }
         }} >
             <Box sx={{ width: { xs: 200, sm: 320, md: 340, }, height: { xs: 200, sm: 320, md: 340, }, position: 'relative', }}>
-                <Image alt="vape-name" layout="fill" objectFit="contain" src="/placeholder.svg" />
+                <Image alt="vape-name" layout="fill" src="/placeholder.svg" />
             </Box>
             <Box sx={{ width: '100%', display: "flex", justifyContent: "space-between", px: 1, mt: 2 }}>
                 <Typography variant="subtitle">Puffs</Typography>
@@ -46,7 +58,7 @@ export default function ProductCard() {
                 </Box>
             </Box>
 
-            <Button variant="contained" sx={{ borderRadius: 5, mt: 2, mb: 2 }} id="vape-popular-button">
+            <Button variant="contained" sx={{ borderRadius: 5, mt: 2, mb: 2 }} id="vape-popular-button" onClick={handleWaMe}>
                 <Typography variant="button">Consultar</Typography>
             </Button>
         </Grid>
