@@ -7,8 +7,6 @@ export default function Home() {
 
   return (
     <>
-
-
       <Box textAlign="center">
         <Typography variant="h1" mt={4}>Business name</Typography>
       </Box>

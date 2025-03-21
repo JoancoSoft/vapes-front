@@ -64,6 +64,10 @@ const theme = createTheme({
             textTransform: 'uppercase',
             color: '#585858',
         },
+        caption: {
+            fontWeight: 'regular',
+            fontSize: 20 * .75,
+        },
     },
     components: {
         MuiTextField: {
