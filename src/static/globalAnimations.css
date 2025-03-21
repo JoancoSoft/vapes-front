@@ -2,15 +2,6 @@
     animation: scrollText 10s linear infinite;
 }
 
-#vape-popular-pulse {
-    animation: pulse 5s ease-in-out infinite;
-}
-
-#product-card:hover {
-    transition: all 1s ease;
-    transform: scale(1.05);
-}
-
 @keyframes scrollText {
     0% {
         transform: translateX(0%);
@@ -27,7 +18,7 @@
     }
 
     50% {
-        transform: scale(1.01);
+        transform: scale(1.05);
     }
 
     100% {

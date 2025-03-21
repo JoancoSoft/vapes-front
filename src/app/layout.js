@@ -11,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <Typography variant="caption">Beta1.0</Typography>
           {children}
         </ThemeRegistry>
       </body>
