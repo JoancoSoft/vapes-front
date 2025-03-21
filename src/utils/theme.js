@@ -93,9 +93,8 @@ const theme = createTheme({
             styleOverrides: {
                 containedPopular: {
                     background: "linear-gradient(90deg, #FFBF00 0%, #F4DD98 50%, #FFBF00 100%)",
-                    color: '#000000',
                     '&:hover': {
-                        backgroundColor: '#FDBA00',
+                        background: "linear-gradient(90deg, #c39201 0%, #c3b078 50%, #c39201 100%)",
                     }
                 }
             },
