@@ -25,6 +25,10 @@ const theme = createTheme({
             fontWeight: 'bold',
             fontSize: 50 * .75,
         },
+        h2: {
+            fontWeight: 'bold',
+            fontSize: 50 * .75,
+        },
         subtitle: {
             fontWeight: 'regular',
             fontSize: 45 * .75,

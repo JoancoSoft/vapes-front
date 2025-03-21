@@ -11,7 +11,7 @@ export default function PopularProductCard() {
             <Box width={350} height={350} id="vape-popular-pulse" sx={{ zIndex: -1, bgcolor: "text.primary", filter: "blur(100px)", opacity: 0.7, position: 'absolute' }} />
 
             <Box width="fit-content" height="auto" sx={{ zIndex: 1, background: 'linear-gradient(90deg,red 0%,#F1862F 50%)', position: 'absolute', transform: 'rotate(-10deg)', display: 'flex', justifyContent: 'space-evenly', borderRadius: 5, alignItems: 'center', px: 2, }}>
-                <Typography variant="h1"
+                <Typography variant="h2"
                     sx={{
                         fontSize: {
                             xs: 20,
