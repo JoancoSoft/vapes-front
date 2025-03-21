@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Box textAlign="center">
         <Typography variant="h1" mt={4}>Business name</Typography>
-        <Typography variant="caption">Beta1.0</Typography>
+        <Typography variant="caption">Beta1.1</Typography>
       </Box>
 
       <Grid container spacing={4} mx={8} mt={16} justifyContent="center" alignItems="center" alignContent="center">
