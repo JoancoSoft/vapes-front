@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Box textAlign="center">
         <Typography variant="h1" mt={4}>Vapes</Typography>
-        <Typography variant="caption">Beta1.4</Typography>
+        <Typography variant="caption">Beta1.5</Typography>
       </Box>
 
       {

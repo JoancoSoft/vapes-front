@@ -73,11 +73,12 @@ export default function ProductCard({ index, product }) {
                 <Image alt={nombre} src={imagen ? imagen : '/default-image.png'} fill={true} priority={index < 2} sizes="(max-width: 600px) 200px, (max-width: 960px) 320px, 340px" />
             </Box>
             <Box sx={{ width: '100%', display: "flex", justifyContent: "space-between", px: 1, mt: 2 }}>
-                <Typography variant="subtitle">{puffs}<Typography variant="caption">puffs</Typography></Typography>                <Typography variant="subtitle">{marca}</Typography>
+                <Typography variant="subtitle">{puffs}<Typography variant="caption">puffs</Typography></Typography>
+                <Typography variant="subtitle">{marca}</Typography>
             </Box>
             <Box sx={{ width: '100%', flexDirection: "column", alignContent: 'start', justifyContent: "space-between", px: 1, mt: 2 }}>
                 <Typography variant="body1">{nombre}</Typography>
-                <Box sx={{ display: "flex", mt: 2, py: 1, height: 'fit-content', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                <Box sx={{ display: "flex", mt: 2, py: 1, height: 'fit-content', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                     <Typography variant="body1" id={animation} sx={{ display: 'inline', textOverflow: 'ellipsis' }}>
                         {sabor}
                     </Typography>

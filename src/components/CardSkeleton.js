@@ -21,7 +21,7 @@ export default function CardSkeleton() {
             bgcolor: "background.card",
             borderRadius: 5,
         }} >
-            <Skeleton variant="rectangular" sx={{ width: { xs: 300, sm: 350, md: 370, }, minHeight: 600, opacity: .9 }} />
+            <Skeleton variant="rectangular" sx={{ width: { xs: 300, sm: 350, md: 370, }, minHeight: 600, opacity: .9, borderRadius: 5 }} />
 
         </Grid >
     );
