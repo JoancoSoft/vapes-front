@@ -3,13 +3,13 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
     palette: {
         primary: {
-            main: "#59C185",
+            main: "#61EA7F",
         },
         secondary: {
             main: "#FDBF08",
         },
         background: {
-            default: "#252B30",
+            default: "#1E1E1E",
             paper: 'transparent',
             footer: "#000000",
         },
@@ -37,12 +37,6 @@ const theme = createTheme({
             fontWeight: 'regular',
             fontSize: 25 * .75,
         },
-        // link: {
-        //     color: '#ffffff',
-        //     fontWeight: 'semi-bold',
-        //     fontSize: 25 * .7,
-        //     textDecoration: 'none',
-        // },
         button: {
             fontWeight: 'semi-bold',
             fontSize: 22 * .75,

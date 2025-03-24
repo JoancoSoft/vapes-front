@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['kemito18.pythonanywhere.com'],
+    },
+};
 
 export default nextConfig;
