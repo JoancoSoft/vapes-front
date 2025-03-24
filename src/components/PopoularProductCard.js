@@ -43,11 +43,36 @@ export default function PopularProductCard({ index, product }) {
     }, []);
 
     return (
-        <Grid size={{ xs: 12, md: 8, lg: 4 }} sx={{ pb: 0, pt: 1, px: 2, height: '100%', width: { xs: 300, sm: 350, md: 370 }, display: "flex", flexDirection: "column", alignItems: "center", bgcolor: "background.paper", borderRadius: 5, border: '2px solid #FDBF08', animation: 'pulse 2s infinite' }} ref={elementRef}>
+        <Grid
+            size={{
+                xs: 12,
+                md: 8,
+                lg: 4
+            }}
+            sx={{
+                pb: 0,
+                pt: 1,
+                px: 2,
+                height: '100%',
+                width: {
+                    xs: 300,
+                    sm: 350,
+                    md: 370
+                },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                bgcolor: "background.transparent",
+                borderRadius: 5,
+                border: '2px solid #FDBF08',
+                animation: 'pulse 2s infinite',
+                minWidth: 300,
+            }}
+            ref={elementRef}>
             <Box width={350} height={350} id="vape-popular-pulse" sx={{ zIndex: -1, bgcolor: "#FFFFFF", filter: "blur(100px)", opacity: 0.5, position: 'absolute' }} />
 
             <Box width="fit-content" height="auto" sx={{ zIndex: 1, background: 'linear-gradient(90deg,red 0%,#F1862F 50%)', position: 'absolute', transform: 'rotate(-10deg)', display: 'flex', justifyContent: 'space-evenly', borderRadius: 5, alignItems: 'center', px: 2 }}>
-                <Typography variant="h2" sx={{ fontSize: { xs: 20, sm: 30, md: 40 }, color: 'text.secondary' }}>
+                <Typography variant="h2">
                     &#x1F525; Más vendido
                 </Typography>
             </Box>

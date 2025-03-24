@@ -10,7 +10,7 @@ const theme = createTheme({
         },
         background: {
             default: "#1E1E1E",
-            paper: 'transparent',
+            transparent: 'transparent',
             footer: "#000000",
         },
         text: {
@@ -24,16 +24,22 @@ const theme = createTheme({
         h1: {
             fontWeight: 'bold',
             fontSize: 50 * .75,
-            color: 'text.secondary'
+            color: '#FFFFFF',
         },
         h2: {
             fontWeight: 'bold',
+            color: '#FFFFFF',
             fontSize: 50 * .75,
-            color: 'text.secondary'
+            '@media (max-width:600px)': {
+                fontSize: 35 * .75,
+            },
         },
         subtitle: {
             fontWeight: 'regular',
             fontSize: 45 * .75,
+            '@media (max-width:600px)': {
+                fontSize: 35 * .75,
+            },
         },
         body1: {
             fontWeight: 'regular',
