@@ -6,14 +6,16 @@ import PopularProductCard from "@/components/PopoularProductCard";
 import SkeletonGrid from "@/components/SkeletonGrid";
 
 import useProductsStore from "@/store/productsStore";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export default function Home() {
 
   const { products, getProducts } = useProductsStore();
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchData = async () => await getProducts().then(() => setIsLoading(false));
+  const fetchData = useCallback(async () => {
+    await getProducts().then(() => setIsLoading(false));
+  }, [getProducts]);
 
   useEffect(() => {
     fetchData();
