@@ -17,13 +17,13 @@ export default function Home() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   return (
     <>
       <Box textAlign="center">
         <Typography variant="h1" mt={4}>Vapes</Typography>
-        <Typography variant="caption">Beta1.7</Typography>
+        <Typography variant="caption">Beta1.7.1</Typography>
       </Box>
 
       {
