@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <>
       <Box textAlign="center">
-        <Typography variant="h1" mt={4}>Business name</Typography>
-        <Typography variant="caption">Beta1.3</Typography>
+        <Typography variant="h1" mt={4}>Vapes</Typography>
+        <Typography variant="caption">Beta1.4</Typography>
       </Box>
 
       {

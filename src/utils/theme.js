@@ -14,8 +14,8 @@ const theme = createTheme({
             footer: "#000000",
         },
         text: {
-            primary: "#FFFFFF",
-            secondary: '#585858',
+            primary: "#CBCBCB",
+            secondary: '#FFFFFF',
         },
     },
 
@@ -24,10 +24,12 @@ const theme = createTheme({
         h1: {
             fontWeight: 'bold',
             fontSize: 50 * .75,
+            color: 'text.secondary'
         },
         h2: {
             fontWeight: 'bold',
             fontSize: 50 * .75,
+            color: 'text.secondary'
         },
         subtitle: {
             fontWeight: 'regular',
@@ -41,7 +43,7 @@ const theme = createTheme({
             fontWeight: 'semi-bold',
             fontSize: 22 * .75,
             textTransform: 'uppercase',
-            color: '#ffffff',
+            color: 'text.primary',
         },
         popularButton: {
             fontWeight: 'semi-bold',

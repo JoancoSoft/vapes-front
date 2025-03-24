@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Vapes",
-  description: "Explora nuestro catálogo de vapes de alta calidad. Encuentra una amplia variedad de dispositivos y sabores para todos los gustos. Compra los mejores vapes en línea.",
+  description: "Explora nuestro catálogo de vapes de alta calidad. Encuentra una amplia variedad de dispositivos y sabores para todos los gustos.",
 };
 
 export default function RootLayout({ children }) {
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content="vapes, catálogo de vapes, comprar vapes, dispositivos de vapeo, sabores de vapeo" />
-        <meta name="author" content="Vapes Company" />
+        <meta name="author" content={metadata.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
