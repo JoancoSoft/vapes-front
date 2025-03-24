@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Typography, Box, Button } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Image from "next/image";
+import ProductImage from "./ProductImage";
 import '@/static/globalAnimations.css';
 
 export default function PopularProductCard({ index, product }) {
@@ -52,9 +52,7 @@ export default function PopularProductCard({ index, product }) {
                 </Typography>
             </Box>
 
-            <Box sx={{ width: { xs: 200, sm: 320, md: 340 }, height: { xs: 200, sm: 320, md: 340 }, position: 'relative', overflow: 'hidden', borderRadius: 5 }}>
-                <Image alt={nombre} src={imagen ? imagen : '/default-image.png'} fill={true} priority={index < 2} sizes="(max-width: 600px) 200px, (max-width: 960px) 320px, 340px" />
-            </Box>
+            <ProductImage src={imagen} alt={`${marca} - ${nombre}`} priority={index < 2} />
 
             <Box sx={{ width: '100%', display: "flex", justifyContent: "space-between", px: 1, mt: 2 }}>
                 <Typography variant="subtitle">{puffs}<Typography variant="caption">puffs</Typography></Typography>
