@@ -14,7 +14,7 @@ export default function ProductCard({ index, product }) {
         event.preventDefault();
         const message = `Hola, me interesa el ${marca} ${nombre} de ${puffs}puffs sabor ${sabor}. ¿Podrías darme más información?`;
         const encodedMsg = encodeURIComponent(message);
-        window.open(`https://api.whatsapp.com/send?phone=5491130921112&text=${encodedMsg}`, '_blank');
+        window.open(`https://api.whatsapp.com/send?phone=5491138322951&text=${encodedMsg}`, '_blank');
     }
 
     useEffect(() => {
