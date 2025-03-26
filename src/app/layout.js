@@ -4,6 +4,9 @@ import Head from "next/head";
 export const metadata = {
   title: "Vapes",
   description: "Explora nuestro catálogo de vapes de alta calidad. Encuentra una amplia variedad de dispositivos y sabores para todos los gustos.",
+  icons: {
+    favicon: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -18,10 +21,8 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
-        {/* TODO: Poner el dominio comprado por ellos */}
-        <meta property="og:url" content="https://vapes-front.vercel.app/" />
-        {/* TODO: Poner imagen del logo */}
-        <meta property="og:image" content="https://vapes-front.vercel.app/imagen_del_logo" />
+        // TODO: Poner el dominio comprado por ellos
+        <meta property="og:url" content="https://vapes-front.vercel.app" />
       </Head>
       <body>
         <ThemeRegistry>
