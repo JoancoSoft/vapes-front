@@ -20,9 +20,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:type" content="website" />
-        {/* // TODO: Poner el dominio comprado por ellos */}
-        <meta property="og:url" content="https://vapes-front.vercel.app" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="https://www.mundovapear.com/" />
       </Head>
       <body>
         <ThemeRegistry>
